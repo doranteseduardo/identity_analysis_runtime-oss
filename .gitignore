@@ -1,0 +1,16 @@
+.DS_Store
+.idea/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+output/
+examples/output/*.json
+
+# Model weights are never versioned: this repository ships code only, and each
+# operator supplies their own ONNX models (see docs/models.md).
+/assets/
+/outputs

@@ -1,0 +1,109 @@
+{
+ "classCount": 3,
+ "identifierMap": [
+  {
+   "document": {
+    "barcode": {
+     "present": false
+    },
+    "caption": "Specimen Identity Card (2024) Front",
+    "country": "ZZT",
+    "deprecated": false,
+    "documentFormat": {
+     "name": "ID1",
+     "value": 0
+    },
+    "documentType": {
+     "name": "IdentityCard",
+     "value": 12
+    },
+    "identifier": 900000001,
+    "isoCodes": [
+     "ZZT"
+    ],
+    "issuedFrom": null,
+    "issuedTo": null,
+    "mrz": {
+     "expectedProfile": null,
+     "ignored": false,
+     "present": false
+    },
+    "series": null,
+    "stateCodes": [],
+    "year": "2024"
+   },
+   "documentIdentifier": 900000001,
+   "outputIndex": 0
+  },
+  {
+   "document": {
+    "barcode": {
+     "present": true
+    },
+    "caption": "Specimen Identity Card (2024) Back",
+    "country": "ZZT",
+    "deprecated": false,
+    "documentFormat": {
+     "name": "ID1",
+     "value": 0
+    },
+    "documentType": {
+     "name": "IdentityCard",
+     "value": 12
+    },
+    "identifier": 900000002,
+    "isoCodes": [
+     "ZZT"
+    ],
+    "issuedFrom": null,
+    "issuedTo": null,
+    "mrz": {
+     "expectedProfile": "td1",
+     "ignored": false,
+     "present": true
+    },
+    "series": null,
+    "stateCodes": [],
+    "year": "2024"
+   },
+   "documentIdentifier": 900000002,
+   "outputIndex": 1
+  },
+  {
+   "document": {
+    "barcode": {
+     "present": false
+    },
+    "caption": "Specimen Identity Card (2016) Front",
+    "country": "ZZT",
+    "deprecated": true,
+    "documentFormat": {
+     "name": "ID1",
+     "value": 0
+    },
+    "documentType": {
+     "name": "IdentityCard",
+     "value": 12
+    },
+    "identifier": 900000003,
+    "isoCodes": [
+     "ZZT"
+    ],
+    "issuedFrom": null,
+    "issuedTo": null,
+    "mrz": {
+     "expectedProfile": null,
+     "ignored": false,
+     "present": false
+    },
+    "series": null,
+    "stateCodes": [],
+    "year": "2016"
+   },
+   "documentIdentifier": 900000003,
+   "outputIndex": 2
+  }
+ ],
+ "networkName": "synthetic-test-fixture",
+ "schemaVersion": 2
+}

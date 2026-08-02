@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "identity-analysis-runtime"
+version = "0.1.0"
+description = "Independent identity-document and facial analysis runtime"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{ name = "Eduardo Dorantes" }]
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.115,<1",
+  "numpy>=1.26,<3",
+  "onnxruntime>=1.17,<2",
+  "Pillow>=12.3,<13",
+  "python-multipart>=0.0.18,<1",
+  "uvicorn[standard]>=0.32,<1",
+  "zxing-cpp>=2.2,<3",
+]
+
+[project.optional-dependencies]
+dev = ["httpx2>=2,<3", "pytest>=8,<9"]
+facial-ir = ["openvino>=2023.3,<2026"]
+
+[project.scripts]
+identity-document = "identity_analysis.cli:main"
+identity-assets = "identity_analysis.assets_cli:main"
+identity-api = "identity_analysis.api:main"
+identity-face = "identity_analysis.face_cli:main"
+identity-face-eval = "identity_analysis.biometric_evaluation:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
